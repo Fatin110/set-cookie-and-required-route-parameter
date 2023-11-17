@@ -12,8 +12,6 @@ class ProfileController extends Controller
 
         $data = ['id' => $id, 'name' => $name, 'age' => $age];
 
-        //$myCookie = response()->cookie('access_token', '123-XYZ', 1, '/', $_SERVER['SERVER_NAME'], false, true);
-
         return response($data, 200)->cookie('access_token', '123-XYZ', 1, '/', $_SERVER['SERVER_NAME'], false, true);
 
 
